@@ -14,7 +14,6 @@ Uses a regular expression to identify all .log files within the Requirements1 fo
 Appends the results to a file named DailyLog.txt without overwriting existing data.
 
 Each time the option is selected, the current date is added before the file listing for reference.
-<img width="524" height="369" alt="image" src="https://github.com/user-attachments/assets/86dc2173-5a18-4d4e-b767-0dc0890b83bd" />
 
 
 2️⃣ Directory Contents
