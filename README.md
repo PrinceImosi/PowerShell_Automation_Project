@@ -1,33 +1,38 @@
 # PowerShell_Automation_Project
 PowerShell_Automation_Project
-PowerShell Automation Project
-
-This project was developed as part of a consulting initiative for a growing start-up based in Salt Lake City, Utah. The client’s environment initially supported 35 employees, with plans to double their staff in the coming months. To prepare for this expansion, automation was introduced to streamline routine server administration tasks and improve operational efficiency.
 
 🔹 Section B: Script Functionality Overview
 
-The PowerShell script, prompts.ps1, provides an interactive user menu using a switch statement. The menu automates several common administrative tasks and continues to run until the user exits by selecting option 5.
+As part of the initiative to streamline administrative tasks for the growing startup client, this section focuses on building an interactive PowerShell script to automate key system operations. The script leverages a switch statement to present a simple menu that allows users to perform common server management tasks without manual repetition. It runs continuously until the user chooses to exit, providing an efficient and user-friendly automation solution.
 
 🧩 Menu Options
 
 1️⃣ Log File Listing
 
-Finds all .log files in the Requirements1 folder.
+Uses a regular expression to identify all .log files within the Requirements1 folder.
 
-Appends results (with the current timestamp) to DailyLog.txt without overwriting existing data.
+Appends the results to a file named DailyLog.txt without overwriting existing data.
+
+Each time the option is selected, the current date is added before the file listing for reference.
 
 2️⃣ Directory Contents
 
-Lists files in the Requirements1 folder in alphabetical order and saves them to C916contents.txt.
+Lists all files in the Requirements1 folder in tabular format, sorted alphabetically (A–Z).
+
+Saves the output to a file named C916contents.txt in the same directory.
 
 3️⃣ System Resource Usage
 
-Displays CPU and memory utilization in real time for quick performance checks.
+Displays the system’s current CPU and memory utilization, offering a quick performance snapshot.
 
 4️⃣ Running Processes
 
-Lists all running processes, sorts them by virtual memory usage, and displays them in a grid view.
+Lists all running processes on the system.
+
+Sorts them by virtual memory size (from least to greatest).
+
+Displays the results in an interactive grid view for improved visibility and analysis.
 
 5️⃣ Exit Script
 
-Cleanly ends the session and exits the menu loop.
+Cleanly terminates script execution and exits the menu loop.
